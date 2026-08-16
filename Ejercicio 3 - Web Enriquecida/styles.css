@@ -1,0 +1,241 @@
+:root {
+  --primary-color: #0f172a;
+  --accent-color: #2563eb;
+  --bg-color: #f8fafc;
+  --card-bg: #ffffff;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --table-border: #e2e8f0;
+  --table-header-bg: #f1f5f9;
+  --font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* Encabezado */
+.store-header {
+  background-color: var(--primary-color);
+  padding: 1rem 1.5rem;
+}
+
+.header-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.store-header nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.store-header nav a:hover {
+  color: #ffffff;
+}
+
+/* Contenedor principal */
+.product-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1.5rem;
+}
+
+/* Product Hero */
+.product-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  background-color: var(--card-bg);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2.5rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .product-hero {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.badge {
+  background-color: #dbeafe;
+  color: var(--accent-color);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+}
+
+.product-info h1 {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+  color: var(--primary-color);
+}
+
+.product-tagline {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+.product-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-buy {
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-buy:hover {
+  background-color: #1d4ed8;
+}
+
+.btn-secondary {
+  border: 1px solid var(--table-border);
+  padding: 0.75rem 1.25rem;
+  text-decoration: none;
+  color: var(--text-main);
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.btn-secondary:hover {
+  background-color: var(--table-header-bg);
+}
+
+/* Secciones */
+.product-section {
+  margin-bottom: 2.5rem;
+}
+
+.product-section h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/* Estilos de Tabla */
+.table-wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--table-border);
+  border-radius: 8px;
+  background-color: var(--card-bg);
+}
+
+.specs-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.col-category {
+  width: 30%;
+  background-color: #fafafa;
+}
+
+.specs-table caption {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: left;
+  padding: 0.75rem 1rem;
+  background-color: #fff;
+  caption-side: bottom;
+}
+
+.specs-table th,
+.specs-table td {
+  padding: 0.9rem 1.2rem;
+  border-bottom: 1px solid var(--table-border);
+}
+
+.specs-table thead th {
+  background-color: var(--table-header-bg);
+  font-weight: 600;
+  color: var(--primary-color);
+  font-size: 0.95rem;
+}
+
+.specs-table tbody tr:last-child th,
+.specs-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.specs-table tbody th {
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.specs-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+/* Caja de Garantía */
+.guarantee-box {
+  background-color: #eff6ff;
+  border: 1px solid #bfdbfe;
+  padding: 1.2rem;
+  border-radius: 8px;
+}
+
+.guarantee-box h3 {
+  color: #1e40af;
+  margin-bottom: 0.4rem;
+}
+
+/* Pie de Página */
+.store-footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--table-border);
+}
