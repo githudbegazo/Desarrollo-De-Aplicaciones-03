@@ -65,10 +65,11 @@ nav a {
     text-decoration: none;
     font-size: 0.95rem;
 }
-
 nav a:hover,
 nav a:focus {
     color: white;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 
@@ -140,12 +141,13 @@ nav a:focus {
 
     transition: 0.3s;
 }
+/* BOTÓN */
 
-.boton:hover {
+.boton:hover,
+.boton:focus {
     background-color: #cfcfcf;
     transform: translateY(-2px);
 }
-
 
 /* FOTO OVALADA */
 
@@ -247,8 +249,8 @@ nav a:focus {
 
     transition: 0.3s;
 }
-
-.tarjeta:hover {
+.tarjeta:hover,
+.tarjeta:focus-within {
     transform: translateY(-5px);
 }
 
