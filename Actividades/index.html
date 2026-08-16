@@ -1,0 +1,1041 @@
+<!--
+/*************************************************************************************************
+ARCHIVO     : producto.html
+AUTOR       : BEGAZO SULLCA SHANELLA ROSITA
+FECHA       : 15/08/2026
+DESCRIPCIÓN : Página web de producto desarrollada con HTML5,
+              tabla de especificaciones, SEO, Open Graph y Twitter Cards.
+*************************************************************************************************/
+-->
+
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>NovaBook Pro | Laptop para estudiantes y desarrolladores</title>
+
+    <!-- SEO -->
+    <meta name="description"
+          content="Conoce NovaBook Pro, una laptop moderna diseñada para estudiantes y desarrolladores. Consulta sus características y especificaciones técnicas.">
+
+    <meta name="keywords"
+          content="laptop, NovaBook Pro, computadora, desarrollo, programación">
+
+    <meta name="author"
+          content="BEGAZO SULLCA SHANELLA ROSITA">
+
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title"
+          content="NovaBook Pro | Laptop para estudiantes y desarrolladores">
+
+    <meta property="og:type"
+          content="website">
+
+    <meta property="og:description"
+          content="Una laptop moderna y potente diseñada para programación, estudios y productividad.">
+
+    <meta property="og:image"
+          content="https://githudbegazo.github.io/Desarrollo-De-Aplicaciones-03/Portafolio/img/1.png">
+
+    <meta property="og:url"
+          content="https://githudbegazo.github.io/Desarrollo-De-Aplicaciones-03/Portafolio/producto.html">
+
+
+    <!-- TWITTER CARDS -->
+    <meta name="twitter:card"
+          content="summary_large_image">
+
+    <meta name="twitter:site"
+          content="@rosabegazowy1">
+
+    <meta name="twitter:title"
+          content="NovaBook Pro">
+
+    <meta name="twitter:description"
+          content="Laptop moderna para estudiantes, desarrolladores y profesionales.">
+
+    <meta name="twitter:image"
+          content="https://githudbegazo.github.io/Desarrollo-De-Aplicaciones-03/Portafolio/img/1.png">
+
+    <style>
+
+        /* =========================================
+           CONFIGURACIÓN GENERAL
+           ========================================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            margin: 0;
+
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background-color: #181818;
+
+            color: #f5f5f5;
+
+            line-height: 1.6;
+        }
+
+
+
+        /* =========================================
+           CABECERA
+           ========================================= */
+
+        header {
+
+            background-color: #111111;
+
+            border-bottom:
+                1px solid #333333;
+        }
+
+
+        nav {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            padding: 20px 30px;
+
+            display: flex;
+
+            justify-content:
+                space-between;
+
+            align-items:
+                center;
+        }
+
+
+        .logo {
+
+            color: white;
+
+            font-size: 1.3rem;
+
+            font-weight: bold;
+
+            text-decoration: none;
+        }
+
+
+        nav ul {
+
+            list-style: none;
+
+            display: flex;
+
+            gap: 25px;
+
+            padding: 0;
+
+            margin: 0;
+        }
+
+
+        nav a {
+
+            color: #cccccc;
+
+            text-decoration: none;
+        }
+
+
+        nav a:hover,
+        nav a:focus {
+
+            color: #ffffff;
+        }
+
+
+
+        /* =========================================
+           PRODUCTO PRINCIPAL
+           ========================================= */
+
+        .producto {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            padding: 80px 30px;
+
+            display: grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap: 70px;
+
+            align-items: center;
+        }
+
+
+        .imagen-producto {
+
+            display: flex;
+
+            justify-content: center;
+        }
+
+
+        .imagen-producto img {
+
+            width: 100%;
+
+            max-width: 480px;
+
+            height: 390px;
+
+            object-fit: cover;
+
+            border-radius:
+                45px 45px 45px 10px;
+
+            box-shadow:
+                0 25px 60px
+                rgba(0, 0, 0, 0.4);
+        }
+
+
+
+        /* =========================================
+           INFORMACIÓN
+           ========================================= */
+
+        .categoria {
+
+            color: #aaaaaa;
+
+            font-size: 0.78rem;
+
+            letter-spacing: 3px;
+        }
+
+
+        .informacion h1 {
+
+            margin:
+                8px 0 5px;
+
+            font-size: 2.7rem;
+        }
+
+
+        .subtitulo {
+
+            margin-top: 0;
+
+            color: #aaaaaa;
+
+            font-size: 1.1rem;
+        }
+
+
+        .descripcion {
+
+            color: #bbbbbb;
+
+            max-width: 520px;
+
+            margin:
+                25px 0;
+        }
+
+
+        .precio {
+
+            margin:
+                25px 0;
+
+            font-size: 2rem;
+
+            font-weight: bold;
+
+            color: #ffffff;
+        }
+
+
+
+        /* =========================================
+           BOTÓN
+           ========================================= */
+
+        .boton {
+
+            display: inline-block;
+
+            padding:
+                14px 30px;
+
+            background-color:
+                #f5f5f5;
+
+            color: #111111;
+
+            border-radius:
+                30px;
+
+            font-weight: bold;
+
+            text-decoration: none;
+
+            transition: 0.3s;
+        }
+
+
+        .boton:hover {
+
+            background-color:
+                #cccccc;
+
+            transform:
+                translateY(-2px);
+        }
+
+
+
+        /* =========================================
+           CARACTERÍSTICAS
+           ========================================= */
+
+        .caracteristicas {
+
+            background-color:
+                #252525;
+
+            padding:
+                80px 30px;
+        }
+
+
+        .contenido {
+
+            max-width: 1100px;
+
+            margin: auto;
+        }
+
+
+        .contenido > h2 {
+
+            margin-top: 0;
+
+            margin-bottom: 35px;
+
+            font-size: 2rem;
+        }
+
+
+        .grid-caracteristicas {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 22px;
+        }
+
+
+        .caracteristica {
+
+            padding: 28px;
+
+            background-color:
+                #f5f5f5;
+
+            color: #111111;
+
+            border-radius:
+                22px;
+        }
+
+
+        .caracteristica h3 {
+
+            margin-top: 0;
+
+            font-size: 1.1rem;
+        }
+
+
+        .caracteristica p {
+
+            margin-bottom: 0;
+
+            color: #555555;
+        }
+
+
+        .especificaciones {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            padding:
+                85px 30px;
+        }
+
+
+        .especificaciones h2 {
+
+            margin-bottom: 35px;
+
+            font-size: 2rem;
+        }
+
+
+        .tabla-contenedor {
+
+            overflow-x: auto;
+
+            border-radius: 20px;
+
+            border:
+                1px solid #3d3d3d;
+        }
+
+
+        table {
+
+            width: 100%;
+
+            border-collapse:
+                collapse;
+
+            background-color:
+                #222222;
+        }
+
+
+        caption {
+
+            padding: 20px;
+
+            text-align: left;
+
+            font-weight: bold;
+
+            background-color:
+                #111111;
+
+            color: #ffffff;
+        }
+
+
+        th,
+        td {
+
+            padding:
+                17px 20px;
+
+            text-align: left;
+
+            border-bottom:
+                1px solid #3b3b3b;
+        }
+
+
+        th {
+
+            width: 35%;
+
+            color: #ffffff;
+
+            background-color:
+                #2d2d2d;
+        }
+
+
+        td {
+
+            color: #cccccc;
+        }
+
+
+        tr:last-child th,
+        tr:last-child td {
+
+            border-bottom: none;
+        }
+
+        .detalle {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            padding:
+                20px 30px 90px;
+        }
+
+
+        .detalle article {
+
+            padding: 35px;
+
+            background-color:
+                #f5f5f5;
+
+            color: #111111;
+
+            border-radius:
+                25px;
+        }
+
+
+        .detalle h2 {
+
+            margin-top: 0;
+        }
+
+
+        .detalle p {
+
+            color: #555555;
+        }
+
+
+
+        /* =========================================
+           FOOTER
+           ========================================= */
+
+        footer {
+
+            padding: 30px;
+
+            text-align: center;
+
+            background-color:
+                #101010;
+
+            color: #777777;
+
+            border-top:
+                1px solid #333333;
+        }
+
+
+
+        /* =========================================
+           ACCESIBILIDAD
+           ========================================= */
+
+        a:focus {
+
+            outline:
+                3px solid white;
+
+            outline-offset:
+                4px;
+        }
+
+
+
+        /* =========================================
+           RESPONSIVE
+           ========================================= */
+
+        @media (max-width: 850px) {
+
+            .producto {
+
+                grid-template-columns:
+                    1fr;
+
+                text-align: center;
+            }
+
+
+            .descripcion {
+
+                margin-left: auto;
+
+                margin-right: auto;
+            }
+
+
+            .grid-caracteristicas {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            nav {
+
+                flex-direction:
+                    column;
+
+                gap: 15px;
+            }
+
+
+            nav ul {
+
+                flex-wrap: wrap;
+
+                justify-content:
+                    center;
+            }
+
+
+            .informacion h1 {
+
+                font-size:
+                    2.1rem;
+            }
+
+
+            th,
+            td {
+
+                padding:
+                    13px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+<header>
+
+    <nav aria-label="Navegación principal">
+
+        <a href="index.html"
+           class="logo">
+
+            SB.
+
+        </a>
+
+
+        <ul>
+
+            <li>
+                <a href="index.html">
+                    Portafolio
+                </a>
+            </li>
+
+            <li>
+                <a href="#caracteristicas">
+                    Características
+                </a>
+            </li>
+
+            <li>
+                <a href="#especificaciones">
+                    Especificaciones
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+
+
+<main>
+    <section class="producto">
+
+
+        <article class="imagen-producto">
+
+            <img
+                src="2.png"
+
+                alt="Laptop NovaBook Pro de color oscuro vista de frente"
+
+                width="480"
+
+                height="390">
+
+        </article>
+
+
+
+        <article class="informacion">
+
+            <p class="categoria">
+                TECNOLOGÍA
+            </p>
+
+
+            <h1>
+                NovaBook Pro
+            </h1>
+
+
+            <p class="subtitulo">
+                Potencia para estudiar y crear.
+            </p>
+
+
+            <p class="descripcion">
+
+                NovaBook Pro es una laptop diseñada
+                para estudiantes, desarrolladores y
+                profesionales que necesitan realizar
+                tareas de programación, diseño,
+                investigación y productividad.
+
+            </p>
+
+
+            <p class="precio">
+                S/ 3,499.00
+            </p>
+
+
+            <a
+                href="#especificaciones"
+
+                class="boton">
+
+                Ver especificaciones
+
+            </a>
+
+        </article>
+
+
+    </section>
+
+
+    <section
+        id="caracteristicas"
+
+        class="caracteristicas">
+
+
+        <section class="contenido">
+
+
+            <h2>
+                Características principales
+            </h2>
+
+
+            <section class="grid-caracteristicas">
+
+
+                <article class="caracteristica">
+
+                    <h3>
+                        Alto rendimiento
+                    </h3>
+
+                    <p>
+
+                        Procesador de alto rendimiento
+                        diseñado para ejecutar aplicaciones,
+                        programación y multitarea.
+
+                    </p>
+
+                </article>
+
+
+
+                <article class="caracteristica">
+
+                    <h3>
+                        Pantalla de alta resolución
+                    </h3>
+
+                    <p>
+
+                        Pantalla de 15.6 pulgadas
+                        para trabajar cómodamente
+                        con aplicaciones y contenido multimedia.
+
+                    </p>
+
+                </article>
+
+
+
+                <article class="caracteristica">
+
+                    <h3>
+                        Almacenamiento rápido
+                    </h3>
+
+                    <p>
+
+                        Unidad SSD para reducir
+                        los tiempos de inicio y facilitar
+                        el acceso rápido a los archivos.
+
+                    </p>
+
+                </article>
+
+
+            </section>
+
+        </section>
+
+    </section>
+
+
+    <section
+        id="especificaciones"
+
+        class="especificaciones">
+
+
+        <h2>
+            Especificaciones técnicas
+        </h2>
+
+
+        <section class="tabla-contenedor">
+
+
+            <table>
+
+
+                <caption>
+                    Ficha técnica de NovaBook Pro
+                </caption>
+
+
+                <colgroup>
+
+                    <col>
+
+                    <col>
+
+                </colgroup>
+
+
+                <tbody>
+
+
+                    <tr>
+
+                        <th scope="row">
+                            Procesador
+                        </th>
+
+                        <td>
+                            Octa Core 3.8 GHz
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <th scope="row">
+                            Memoria RAM
+                        </th>
+
+                        <td>
+                            16 GB DDR5
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <th scope="row">
+                            Almacenamiento
+                        </th>
+
+                        <td>
+                            SSD 512 GB
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <th scope="row">
+                            Pantalla
+                        </th>
+
+                        <td>
+                            15.6 pulgadas Full HD
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <th scope="row">
+                            Resolución
+                        </th>
+
+                        <td>
+                            1920 × 1080 píxeles
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <th scope="row">
+                            Conectividad
+                        </th>
+
+                        <td>
+                            Wi-Fi, Bluetooth y USB-C
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <th scope="row">
+                            Cámara
+                        </th>
+
+                        <td>
+                            Full HD
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <th scope="row">
+                            Batería
+                        </th>
+
+                        <td>
+                            Hasta 10 horas
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <th scope="row">
+                            Peso
+                        </th>
+
+                        <td>
+                            1.6 kg
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <th scope="row">
+                            Color
+                        </th>
+
+                        <td>
+                            Gris grafito
+                        </td>
+
+                    </tr>
+
+
+                </tbody>
+
+
+            </table>
+
+        </section>
+
+    </section>
+
+
+    <section class="detalle">
+
+
+        <article>
+
+
+            <h2>
+                Diseñada para productividad
+            </h2>
+
+
+            <p>
+
+                NovaBook Pro combina rendimiento,
+                portabilidad y un diseño moderno.
+                Su configuración permite realizar
+                actividades académicas, desarrollar
+                aplicaciones, navegar por Internet,
+                trabajar con documentos y ejecutar
+                múltiples programas de forma eficiente.
+
+            </p>
+
+
+        </article>
+
+
+    </section>
+
+
+</main>
+
+
+
+<footer>
+
+    <p>
+
+        &copy; 2026 Shanella Begazo |
+        Página de producto desarrollada con HTML5.
+
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>
