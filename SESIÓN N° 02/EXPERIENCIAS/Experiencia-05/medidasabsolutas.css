@@ -1,0 +1,70 @@
+/*
+ARCHIVO     : medidasabsolutas.css
+AUTOR       : Juan Joshua Hincho Huillca
+FECHA       : 22/08/2026
+DESCRIPCIÓN : Aplica cm, mm, Q, in, pc, pt y px.
+*/
+
+body {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+header {
+    padding: 12px;
+    color: white;
+    background: #2563a6;
+}
+
+header h1,
+header p {
+    margin: 5px;
+}
+
+section {
+    padding: 5px 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+section p {
+    margin: 7px 0;
+}
+
+.barra {
+    display: inline-block;
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background: #3b82c4;
+}
+
+.cm-1 { width: 1.27cm; }
+.cm-2 { width: 2.54cm; }
+.cm-3 { width: 3.81cm; }
+
+.mm-1 { width: 12.7mm; }
+.mm-2 { width: 25.4mm; }
+.mm-3 { width: 38.1mm; }
+
+.q-1 { width: 50.8Q; }
+.q-2 { width: 101.6Q; }
+.q-3 { width: 152.4Q; }
+
+.in-1 { width: 0.5in; }
+.in-2 { width: 1in; }
+.in-3 { width: 1.5in; }
+
+.pc-1 { width: 3pc; }
+.pc-2 { width: 6pc; }
+.pc-3 { width: 9pc; }
+
+.pt-1 { width: 36pt; }
+.pt-2 { width: 72pt; }
+.pt-3 { width: 108pt; }
+
+.px-1 { width: 48px; }
+.px-2 { width: 96px; }
+.px-3 { width: 144px; }

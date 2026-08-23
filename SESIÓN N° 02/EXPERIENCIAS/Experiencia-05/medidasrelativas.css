@@ -1,0 +1,90 @@
+/*
+ARCHIVO     : medidasrelativas.css
+AUTOR       : Juan Joshua Hincho Huillca
+FECHA       : 22/08/2026
+DESCRIPCIÓN : Aplica em, ex, ch, rem, lh, vw, vh, vmin y vmax.
+*/
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    width: 90%;
+    max-width: 700px;
+    margin: 1.2rem auto;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+header {
+    padding: 0.8rem;
+    color: white;
+    background: #70408a;
+}
+
+header h1,
+header p {
+    margin: 0.3rem;
+}
+
+section {
+    padding: 0.3rem 0.8rem;
+    border-bottom: 0.08rem solid #ccc;
+}
+
+section p {
+    margin: 0.45rem 0;
+}
+
+.barra {
+    display: inline-block;
+    height: 1rem;
+    margin-right: 0.6rem;
+    vertical-align: middle;
+    background: #955daf;
+}
+
+.grupo-em {
+    font-size: 18px;
+}
+
+.em-1 { width: 4em; }
+.em-2 { width: 8em; }
+.em-3 { width: 12em; }
+
+.ex-1 { width: 8ex; }
+.ex-2 { width: 16ex; }
+.ex-3 { width: 24ex; }
+
+.ch-1 { width: 8ch; }
+.ch-2 { width: 16ch; }
+.ch-3 { width: 24ch; }
+
+.rem-1 { width: 4rem; }
+.rem-2 { width: 8rem; }
+.rem-3 { width: 12rem; }
+
+.grupo-lh {
+    line-height: 1.5rem;
+}
+
+.lh-1 { width: 3lh; }
+.lh-2 { width: 6lh; }
+.lh-3 { width: 9lh; }
+
+.vw-1 { width: 10vw; }
+.vw-2 { width: 20vw; }
+.vw-3 { width: 30vw; }
+
+.vh-1 { width: 8vh; }
+.vh-2 { width: 16vh; }
+.vh-3 { width: 24vh; }
+
+.vmin-1 { width: 8vmin; }
+.vmin-2 { width: 16vmin; }
+.vmin-3 { width: 24vmin; }
+
+.vmax-1 { width: 5vmax; }
+.vmax-2 { width: 10vmax; }
+.vmax-3 { width: 15vmax; }
