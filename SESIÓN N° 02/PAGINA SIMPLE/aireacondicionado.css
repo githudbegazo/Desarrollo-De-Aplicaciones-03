@@ -1,0 +1,213 @@
+/*
+ARCHIVO     : aireacondicionado.css
+AUTOR       : Juan Joshua Hincho Huillca
+FECHA       : 22/08/2026
+DESCRIPCIÓN : Estilos para la página ClimaAndes.
+*/
+
+:root {
+    --azul: #075985;
+    --celeste: #0ea5e9;
+    --claro: #e0f2fe;
+    --oscuro: #172554;
+    --blanco: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--oscuro);
+    background: #f8fafc;
+}
+
+header {
+    min-height: 75px;
+    padding: 0 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--blanco);
+}
+
+.logo {
+    color: var(--azul);
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo::before {
+    content: "❄ ";
+    color: var(--celeste);
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a[href^="#"] {
+    color: var(--oscuro);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--celeste);
+}
+
+.portada {
+    min-height: 390px;
+    padding: 70px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background: linear-gradient(120deg, var(--oscuro), var(--celeste));
+}
+
+.portada > div:first-child {
+    max-width: 570px;
+}
+
+.etiqueta {
+    color: #bae6fd;
+    font-weight: bold;
+}
+
+.portada h1 {
+    max-width: 560px;
+    margin: 12px 0;
+    font-size: 45px;
+}
+
+.portada h1 + p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.boton {
+    display: inline-block;
+    padding: 13px 25px;
+    border-radius: 7px;
+    background: white;
+    color: var(--azul);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.boton:hover {
+    transform: translateY(-3px);
+    background: var(--claro);
+}
+
+.indicador {
+    width: 190px;
+    height: 190px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    border: 12px solid #ffffff55;
+    border-radius: 50%;
+    background: #ffffff22;
+}
+
+.indicador strong {
+    font-size: 42px;
+}
+
+.indicador strong + span {
+    margin-top: 7px;
+}
+
+.servicios {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.servicios h2::after {
+    content: "";
+    display: block;
+    width: 55px;
+    height: 4px;
+    margin: 9px auto 30px;
+    background: var(--celeste);
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.tarjetas > article {
+    position: relative;
+    padding: 35px 22px 25px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 14px #0002;
+}
+
+.tarjeta::before {
+    content: attr(data-icono);
+    display: grid;
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--claro);
+    color: var(--azul);
+    font-size: 24px;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+}
+
+.tarjeta:nth-child(2) {
+    border-top: 5px solid var(--celeste);
+}
+
+.tarjeta h3 + p {
+    min-height: 45px;
+    color: #475569;
+    line-height: 1.5;
+}
+
+.tarjeta span {
+    color: var(--azul);
+    font-weight: bold;
+}
+
+.contacto {
+    padding: 45px 20px;
+    text-align: center;
+    background: var(--claro);
+}
+
+.secundario {
+    margin-top: 10px;
+    background: var(--azul);
+    color: white;
+}
+
+.secundario:hover {
+    background: var(--oscuro);
+}
+
+a:focus-visible {
+    outline: 3px solid #facc15;
+    outline-offset: 3px;
+}
+
+footer {
+    padding: 16px;
+    text-align: center;
+    background: var(--oscuro);
+    color: white;
+}
