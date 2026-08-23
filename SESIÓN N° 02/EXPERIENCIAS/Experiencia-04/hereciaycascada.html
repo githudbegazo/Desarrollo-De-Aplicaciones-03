@@ -1,0 +1,34 @@
+<!--
+ARCHIVO     : hereciaycascada.html
+AUTOR       : Juan Joshua Hincho Huillca
+FECHA       : 22/08/2026
+DESCRIPCIÓN : Ejemplos de herencia y cascada CSS.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Herencia y cascada</title>
+    <link rel="stylesheet" href="hereciaycascada.css">
+</head>
+<body>
+    <h1>Herencia</h1>
+
+    <div class="hereda-color"><p>Este texto hereda el color.</p></div>
+    <div class="hereda-fuente"><p>Este texto hereda la fuente.</p></div>
+    <div class="hereda-tamano"><p>Este texto hereda el tamaño.</p></div>
+    <div class="hereda-alineacion"><p>Este texto hereda la alineación.</p></div>
+    <div class="hereda-interlineado"><p>Este texto hereda el interlineado.</p></div>
+    <div class="hereda-espaciado"><p>Este texto hereda el espaciado.</p></div>
+    <div class="hereda-estilo"><p>Este texto hereda el estilo.</p></div>
+
+    <h2>Cascada</h2>
+
+    <p class="orden">Caso 1: gana la última regla.</p>
+    <span class="por-clase">Caso 2: gana el selector de clase.</span>
+    <p id="prioridad" class="id-clase">Caso 3: gana el identificador.</p>
+    <p class="mensaje destacado">Caso 4: gana el selector más específico.</p>
+    <p class="urgente">Caso 5: gana la regla con important.</p>
+</body>
+</html>

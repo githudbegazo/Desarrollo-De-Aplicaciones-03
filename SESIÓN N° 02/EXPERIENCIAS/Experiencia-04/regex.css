@@ -1,0 +1,37 @@
+/*
+ARCHIVO     : regex.css
+AUTOR       : Juan Joshua Hincho Huillca
+FECHA       : 22/08/2026
+DESCRIPCIÓN : Cinco casos de selectores de atributos regex.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+a, p {
+    display: block;
+    margin: 12px 0;
+    padding: 8px;
+}
+
+a[href^="https"] {
+    color: green;
+}
+
+a[href$=".pdf"] {
+    background: #ffecb3;
+}
+
+a[href*="aula"] {
+    border-left: 5px solid #1976d2;
+}
+
+[class^="curso-"] {
+    color: #6a1b9a;
+}
+
+[class$="-pendiente"] {
+    background: #ffcdd2;
+}

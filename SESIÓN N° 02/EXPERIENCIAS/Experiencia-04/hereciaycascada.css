@@ -1,0 +1,85 @@
+/*
+ARCHIVO     : hereciaycascada.css
+AUTOR       : Juan Joshua Hincho Huillca
+FECHA       : 22/08/2026
+DESCRIPCIÓN : Siete casos de herencia y cinco de cascada.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+div {
+    padding: 6px;
+    margin: 7px 0;
+    background: #f2f5f7;
+}
+
+.hereda-color {
+    color: #1565c0;
+}
+
+.hereda-fuente {
+    font-family: Georgia, serif;
+}
+
+.hereda-tamano {
+    font-size: 20px;
+}
+
+.hereda-alineacion {
+    text-align: center;
+}
+
+.hereda-interlineado {
+    line-height: 2;
+}
+
+.hereda-espaciado {
+    letter-spacing: 3px;
+}
+
+.hereda-estilo {
+    font-style: italic;
+}
+
+.orden {
+    color: blue;
+}
+
+.orden {
+    color: red;
+}
+
+span {
+    color: #333;
+}
+
+.por-clase {
+    color: green;
+}
+
+.id-clase {
+    color: orange;
+}
+
+#prioridad {
+    color: purple;
+}
+
+.mensaje {
+    background: #dbeafe;
+}
+
+.mensaje.destacado {
+    background: #ffe0b2;
+}
+
+.urgente {
+    color: red !important;
+}
+
+.urgente {
+    color: blue;
+}

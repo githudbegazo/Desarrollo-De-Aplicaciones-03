@@ -1,0 +1,63 @@
+/*
+ARCHIVO     : combinadosymultiples.css
+AUTOR       : Juan Joshua Hincho Huillca
+FECHA       : 22/08/2026
+DESCRIPCIÓN : Siete casos combinados y cinco múltiples.
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    color: #263238;
+}
+
+h1, h2 {
+    color: #1565c0;
+}
+
+header, footer {
+    padding: 15px;
+    background: #e3f2fd;
+}
+
+section p, section li {
+    line-height: 1.5;
+}
+
+.actividad, ul {
+    border: 1px solid #90caf9;
+    padding: 12px;
+}
+
+a, button {
+    margin-right: 10px;
+    color: #0d47a1;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main > section {
+    margin: 20px 0;
+}
+
+h2 + p {
+    font-weight: bold;
+}
+
+h3 ~ p {
+    color: #546e7a;
+}
+
+article.actividad {
+    background: #f5faff;
+}
+
+article p {
+    padding-left: 10px;
+}
+
+ul > li {
+    margin: 5px;
+}
