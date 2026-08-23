@@ -1,0 +1,146 @@
+<!--
+ARCHIVO     : ejercicio05.html
+AUTOR       : Juan Joshua Hincho Huillca
+FECHA       : 22/08/2026
+DESCRIPCIÓN : Recreación simplificada de la página Gob.pe.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gob.pe - Recreación académica</title>
+    <link rel="stylesheet" href="ejercicio05.css">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor encabezado">
+            <a class="logo" href="https://www.gob.pe/">gob.pe</a>
+
+            <nav aria-label="Navegación principal">
+                <a href="https://www.gob.pe/estadisticas">Estadísticas</a>
+
+                <a href="https://www.gob.pe/busquedas?contenido[]=servicios">
+                    Trámites y servicios
+                </a>
+
+                <a href="https://www.gob.pe/estado">
+                    Organización del Estado
+                </a>
+
+                <a href="https://www.gob.pe/transformaciondigital">
+                    Transformación digital
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="portada">
+            <div class="presentacion">
+                <h1>¡Estás en Gob.pe!</h1>
+
+                <p>
+                    Esta es la Plataforma Digital del Estado Peruano,
+                    donde encontrarás información sobre trámites,
+                    servicios y normas.
+                </p>
+
+                <form action="https://www.gob.pe/busquedas" method="get">
+                    <label for="busqueda">Busca lo que necesites</label>
+
+                    <div class="buscador">
+                        <input
+                            id="busqueda"
+                            name="term"
+                            type="search"
+                            placeholder="Ejemplo: renovar DNI"
+                            required
+                        >
+
+                        <button type="submit" aria-label="Buscar"></button>
+                    </div>
+                </form>
+            </div>
+
+            <span class="ubicacion">Palacio de Gobierno, Lima</span>
+        </section>
+
+        <section class="visitados">
+            <div class="contenedor">
+                <h2>Trámites y servicios más vistos</h2>
+
+                <div class="tramites">
+                    <a href="https://www.gob.pe/470-obtener-certificado-unico-laboral-cul">
+                        Obtener Certificado Único Laboral
+                    </a>
+
+                    <a href="https://www.gob.pe/7313-emitir-recibo-por-honorarios-electronico">
+                        Emitir recibo por honorarios
+                    </a>
+
+                    <a href="https://www.gob.pe/13388-consultar-estado-de-tu-tramite-para-la-entrega-de-tu-dni">
+                        Consultar estado del trámite del DNI
+                    </a>
+
+                    <a href="https://www.gob.pe/busquedas?contenido[]=servicios">
+                        Verificar afiliación al SIS
+                    </a>
+                </div>
+
+                <a
+                    class="ver-todos"
+                    href="https://www.gob.pe/busquedas?contenido[]=servicios"
+                >
+                    Ver todos los trámites y servicios
+                </a>
+            </div>
+        </section>
+
+        <section class="catalogo">
+            <div class="contenedor">
+                <h2 class="titulo">Catálogo de trámites y servicios</h2>
+
+                <p>
+                    Revisa los servicios destacados del Estado según
+                    el tema de tu interés.
+                </p>
+
+                <div class="tarjetas">
+                    <article class="tarjeta" data-icono="♥">
+                        <h3>
+                            <a href="https://www.gob.pe/">Ayuda social</a>
+                        </h3>
+
+                        <p>
+                            Consultas sobre programas, apoyos y bonos.
+                        </p>
+                    </article>
+
+                    <article class="tarjeta" data-icono="!">
+                        <h3>
+                            <a href="https://www.gob.pe/">Denunciar</a>
+                        </h3>
+
+                        <p>
+                            Canales para presentar denuncias y reclamos.
+                        </p>
+                    </article>
+
+                    <article class="tarjeta" data-icono="★">
+                        <h3>
+                            <a href="https://www.gob.pe/">Emprender</a>
+                        </h3>
+
+                        <p>
+                            Información para iniciar y formalizar un negocio.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,277 @@
+/*
+ARCHIVO     : ejercicio05.css
+AUTOR       : Juan Joshua Hincho Huillca
+FECHA       : 22/08/2026
+DESCRIPCIÓN : Selectores avanzados, pseudoclases y pseudoelementos.
+*/
+
+:root {
+    --rojo: #c8102e;
+    --azul: #0056a6;
+    --oscuro: #292b31;
+    --gris: #f1f6fa;
+    --blanco: #ffffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #202124;
+}
+
+.contenedor {
+    width: 86%;
+    max-width: 1120px;
+    margin: auto;
+}
+
+header {
+    background: var(--blanco);
+}
+
+header > .encabezado {
+    min-height: 98px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--rojo);
+    font-size: 31px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo::before {
+    content: "PE";
+    width: 40px;
+    height: 40px;
+    margin-right: 8px;
+    display: grid;
+    place-items: center;
+    border-radius: 7px;
+    background: var(--rojo);
+    color: white;
+    font-size: 15px;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+}
+
+nav a[href^="https"] {
+    color: var(--azul);
+    font-weight: bold;
+}
+
+nav a:not(:last-child) {
+    margin-right: 5px;
+}
+
+nav a:hover {
+    color: var(--rojo);
+}
+
+.portada {
+    position: relative;
+    min-height: 420px;
+    padding: 75px 20px;
+    background:
+        linear-gradient(#0002, #0002),
+        url("imagenes/palacio.jpg") center/cover;
+}
+
+.presentacion {
+    width: 560px;
+    max-width: 90%;
+    margin: auto;
+    padding: 25px 30px;
+    text-align: center;
+    background: #fffffff0;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px #0003;
+}
+
+.presentacion h1 {
+    margin: 0 0 12px;
+    font-size: 36px;
+}
+
+.presentacion h1::first-letter {
+    color: var(--rojo);
+}
+
+.presentacion h1 + p {
+    line-height: 1.5;
+}
+
+form label {
+    display: block;
+    margin: 22px 0 8px;
+    font-weight: bold;
+}
+
+.buscador {
+    display: flex;
+}
+
+input[type="search"] {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid var(--oscuro);
+    border-radius: 8px 0 0 8px;
+    font-size: 16px;
+}
+
+.buscador button {
+    width: 65px;
+    border: 0;
+    border-radius: 0 8px 8px 0;
+    background: var(--oscuro);
+    color: white;
+    cursor: pointer;
+}
+
+.buscador button::before {
+    content: "⌕";
+    font-size: 30px;
+}
+
+.buscador button:hover {
+    background: var(--rojo);
+}
+
+.ubicacion {
+    position: absolute;
+    right: 8%;
+    bottom: 18px;
+    padding: 8px 14px;
+    border-radius: 5px;
+    background: var(--oscuro);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.visitados {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.visitados h2,
+.catalogo h2 {
+    text-align: left;
+}
+
+.tramites {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 25px 0 32px;
+}
+
+.tramites > a {
+    padding: 10px 22px;
+    color: var(--azul);
+    text-align: left;
+    line-height: 1.5;
+}
+
+.tramites a + a {
+    border-left: 1px solid #d4d4d4;
+}
+
+.tramites a:hover {
+    color: var(--rojo);
+}
+
+.ver-todos {
+    display: inline-block;
+    padding: 16px 35px;
+    border: 2px solid var(--azul);
+    border-radius: 7px;
+    color: var(--azul);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.ver-todos:hover {
+    background: var(--azul);
+    color: white;
+}
+
+.catalogo {
+    padding: 40px 0 55px;
+    background: var(--gris);
+}
+
+.titulo::after {
+    content: "";
+    display: block;
+    width: 58px;
+    height: 4px;
+    margin-top: 9px;
+    background: var(--rojo);
+}
+
+.tarjetas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 28px;
+}
+
+.tarjetas > article {
+    position: relative;
+    min-height: 170px;
+    padding: 28px 22px 20px 80px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 3px 12px #0002;
+    transition: transform .25s, box-shadow .25s;
+}
+
+.tarjeta::before {
+    content: attr(data-icono);
+    position: absolute;
+    top: 30px;
+    left: 28px;
+    color: var(--rojo);
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.tarjeta:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px #0003;
+}
+
+.tarjeta:nth-child(2) {
+    border-top: 4px solid var(--rojo);
+}
+
+.tarjeta h3 + p {
+    line-height: 1.5;
+}
+
+.tarjeta a {
+    color: var(--azul);
+}
+
+.tarjeta a:hover {
+    color: var(--rojo);
+}
+
+a:focus-visible,
+input:focus-visible,
+button:focus-visible {
+    outline: 3px solid #ffbf00;
+    outline-offset: 3px;
+}
