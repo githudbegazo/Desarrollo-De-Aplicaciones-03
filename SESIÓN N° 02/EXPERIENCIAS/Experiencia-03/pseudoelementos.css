@@ -1,0 +1,38 @@
+/* 1. Primera letra */
+p::first-letter {
+    color: red;
+    font-size: 30px;
+}
+
+/* 2. Primera línea */
+p::first-line {
+    font-weight: bold;
+}
+
+/* 3. Contenido antes del título */
+h1::before {
+    content: "---- ";
+}
+
+/* 4. Contenido después del título */
+h1::after {
+    content: " ----";
+}
+
+/* 5. Marcador de las listas */
+li::marker {
+    color: orange;
+    font-size: 20px;
+}
+
+/* 6. Texto seleccionado con el mouse */
+p::selection {
+    background-color: orange;
+    color: white;
+}
+
+/* 7. Texto placeholder del input */
+input::placeholder {
+    color: gray;
+    font-style: italic;
+}
