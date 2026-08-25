@@ -1,0 +1,50 @@
+/*ARCHIVO: nombre.css
+AUTOR  : Begazo Sullca Shanella Rosita
+FECHA    : 22/08/2024
+DESCRIPCIÓN: Agregue reglas que usen únicamente selectores de clase para la configuración del documento web. */
+.pagina {
+    font-family: Arial, sans-serif;
+    background-color: #fff4e6;
+    color: #333;
+    margin: 0;
+}
+.cabecera {
+    background-color: #d35400;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo {
+    font-size: 30px;
+}
+
+.contenido {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.receta {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.subtitulo {
+    color: #d35400;
+}
+
+.parrafo {
+    line-height: 1.5;
+}
+
+.lista {
+    color: #555;
+}
+
+.pie {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
