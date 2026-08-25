@@ -1,0 +1,32 @@
+/* Todos los elementos que tengan href */
+[href] {
+    color: green;
+}
+
+/* href con un valor exacto */
+[href="http://www.udemy.com"] {
+    color: red;
+    font-weight: bold;
+}
+
+/* Todos los elementos que tengan title */
+[title] {
+    background-color: #ffe0b2;
+}
+
+/* Input de tipo texto */
+[type="text"] {
+    border: 2px solid orange;
+    padding: 5px;
+}
+
+/* Input de tipo email */
+[type="email"] {
+    border: 2px solid green;
+    padding: 5px;
+}
+
+/* Elementos que tengan el atributo required */
+[required] {
+    background-color: #fff4e6;
+}
