@@ -1,0 +1,51 @@
+/* Selectores únicamente por ID */
+
+#pagina {
+    font-family: Arial, sans-serif;
+    background-color: #fff4e6;
+    color: #333;
+    margin: 0;
+}
+#cabecera {
+    background-color: #d35400;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+#titulo {
+    font-size: 30px;
+}
+#contenido {
+    width: 80%;
+    margin: 20px auto;
+}
+#receta {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+#nombre-receta {
+    color: #d35400;
+}
+#descripcion {
+    font-style: italic;
+}
+#titulo-ingredientes {
+    color: #d35400;
+}
+#ingredientes {
+    color: #555;
+}
+
+#titulo-preparacion {
+    color: #d35400;
+}
+#preparacion {
+    line-height: 1.5;
+}
+#pie {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
