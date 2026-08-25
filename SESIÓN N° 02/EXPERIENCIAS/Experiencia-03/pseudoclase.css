@@ -1,0 +1,61 @@
+/* 1. Al pasar el mouse */
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+/* 2. Cuando el enlace se visita */
+a:visited {
+    color: purple;
+}
+
+/* 3. Cuando se presiona */
+a:active {
+    color: orange;
+}
+
+/* 4. Cuando un input obtiene el foco */
+input:focus {
+    background-color: blanchedalmond;
+}
+
+/* 5. Input obligatorio */
+input:required {
+    border: 2px solid orange;
+}
+
+/* 6. Input válido */
+input:valid {
+    border-color: green;
+}
+
+/* 7. Input inválido */
+input:invalid {
+    border-color: red;
+}
+
+/* 8. Primer elemento de la lista */
+li:first-child {
+    color: green;
+}
+
+/* 9. Último elemento de la lista */
+li:last-child {
+    color: blue;
+}
+
+/* 10. Segundo elemento */
+li:nth-child(2) {
+    font-weight: bold;
+}
+
+/* 11. Elementos impares */
+li:nth-child(odd) {
+    background-color: #fff4e6;
+}
+
+/* 12. Cuando el botón tiene el mouse encima */
+button:hover {
+    background-color: #d35400;
+    color: white;
+}
