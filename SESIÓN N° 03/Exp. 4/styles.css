@@ -1,0 +1,350 @@
+/* =========================================================
+   EXPERIENCIA DE PRÁCTICA N.° 04: 
+   ADAPTANDO LA INTERFAZ CON MOBILE FIRST Y MEDIA QUERIES
+   ========================================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #17324d;
+    background: #f7fafc;
+}
+
+.header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #ffffff;
+    border-bottom: 1px solid #d9e2ec;
+}
+
+.logo {
+    color: #0a4f88;
+    font-size: 1.65rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.nav a {
+    color: #17324d;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #168f7a;
+}
+
+.hero {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero__texto {
+    width: 100%;
+}
+
+.etiqueta,
+.seccion-titulo > span {
+    color: #168f7a;
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.hero h1 {
+    margin: 16px 0 20px;
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    line-height: 1.02;
+    color: #0b3562;
+}
+
+.hero p,
+.seccion-titulo p,
+.proyectos p {
+    line-height: 1.7;
+    color: #52667a;
+}
+
+.acciones {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.boton {
+    width: 100%;
+    max-width: 180px;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 800;
+    border-radius: 8px;
+}
+
+.boton--principal {
+    color: white;
+    background: #168f7a;
+}
+
+.boton--secundario {
+    color: #0b3562;
+    background: white;
+    border: 2px solid #0b3562;
+}
+
+.hero__imagen {
+    width: 100%;
+}
+
+.hero__imagen img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 18px;
+    box-shadow: 0 18px 50px rgba(24, 68, 108, 0.18);
+}
+
+.servicios {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.seccion-titulo {
+    width: 100%;
+    max-width: 620px;
+    margin-bottom: 36px;
+}
+
+.seccion-titulo h2,
+.proyectos h2 {
+    margin: 10px 0 12px;
+    font-size: 2.4rem;
+    color: #0b3562;
+}
+
+.tarjetas { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 24px; 
+} 
+
+.tarjeta {
+    display: flex; 
+    flex-direction: column; 
+    min-height: 280px;
+    padding: 28px;
+    background: white;
+    border: 1px solid #dce5ee;
+    border-radius: 14px;
+}
+
+.tarjeta__icono {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 28px;
+    color: white;
+    font-weight: 800;
+    background: #0a5ea8;
+    border-radius: 12px;
+}
+
+.tarjeta h3 {
+    font-size: 1.3rem;
+    color: #0b3562;
+}
+
+.tarjeta p {
+    min-height: 78px;
+    line-height: 1.6;
+    color: #60758a;
+}
+
+.tarjeta a {
+    color: #168f7a;
+    font-weight: 800;
+    margin-top: auto; 
+}
+
+.tarjeta--destacada {
+    grid-column: auto;
+}
+
+.proyectos {
+    position: relative;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto 40px;
+    padding: 40px 20px;
+    background: #eaf6f3;
+    border-radius: 20px;
+}
+
+.dato {
+    position: relative;
+    margin-top: 25px;
+    width: 100%;
+    padding: 24px;
+    color: white;
+    background: #0b3562;
+    border-radius: 16px;
+}
+
+.dato strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+.dato span {
+    line-height: 1.5;
+}
+
+.ayuda {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 10;
+    width: 60px;
+    height: 60px;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 900;
+    background: #168f7a;
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+}
+
+.footer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #dbe8f3;
+    background: #0b3562;
+}
+
+.seccion-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "aside"
+        "main"
+        "extra"
+        "footer";
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-header { grid-area: header; }
+.grid-aside { grid-area: aside; }
+.grid-main { grid-area: main; }
+.grid-extra { grid-area: extra; }
+.grid-footer { grid-area: footer; }
+
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 28px;
+        height: 78px;
+    }
+
+    .nav {
+        margin-top: 0;
+        gap: 34px;
+    }
+
+    .hero {
+        flex-direction: row;
+        align-items: center;
+        padding: 70px 28px;
+        gap: 70px;
+    }
+
+    .hero__texto {
+        width: 510px;
+    }
+
+    .boton {
+        width: auto;
+    }
+
+    .servicios {
+        padding: 70px 28px 90px;
+    }
+
+    .proyectos {
+        padding: 52px 430px 52px 52px;
+        margin: 0 auto 80px;
+    }
+
+    .dato {
+        position: absolute;
+        top: 52px;
+        right: -70px;
+        width: 420px;
+        padding: 36px;
+        margin-top: 0;
+    }
+
+    .dato strong {
+        font-size: 3.2rem;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .seccion-grid {
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "header header"
+            "main aside"
+            "main extra"
+            "footer footer";
+        padding: 30px;
+    }
+}
+
+@media (min-width: 900px) {
+    .tarjeta--destacada {
+        grid-column: 1 / 3;
+    }
+}
