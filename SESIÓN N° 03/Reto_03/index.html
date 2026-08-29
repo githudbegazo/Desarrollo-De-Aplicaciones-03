@@ -1,0 +1,96 @@
+  <!-- ===========================
+  Autor: Duarte Rodriguez Fabiola Constanza 
+  Descripción: Archivo HTML, base de página web de desarrollo personal portafolio
+  Fecha: 29/08/2026
+  Archivo: index.html
+       =========================== -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio Personal Desarrollo Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>Portafolio Personal Desarrollo Web</h1>
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="hero">
+    <h2>Construyo soluciones digitales</h2>
+    <p>Desarrollo web, pentesting y más.</p>
+    <button onclick="document.getElementById('proyectos').scrollIntoView({behavior:'smooth'})">
+      Ver proyectos
+    </button>
+  </section>
+  <section id="servicios">
+    <h2>Servicios</h2>
+    <div class="servicios-grid">
+      <article>
+        <h3>Desarrollo Web</h3>
+        <p>Creación de sitios modernos, accesibles y optimizados.</p>
+      </article>
+      <article>
+        <h3>Pentesting</h3>
+        <p>Pruebas de seguridad para aplicaciones y redes.</p>
+      </article>
+      <article>
+        <h3>SQL & Bases de Datos</h3>
+        <p>Diseño y optimización de consultas y estructuras.</p>
+      </article>
+    </div>
+  </section>
+  <section id="proyectos">
+    <h2>Proyectos</h2>
+    <div class="proyectos-grid">
+      <article>
+        <h3>Portfolio HTML/CSS</h3>
+        <p>Primer proyecto académico con enfoque en accesibilidad.</p>
+      </article>
+      <article>
+        <h3>Laboratorio Pentesting</h3>
+        <p>Entorno de pruebas con Kali y Docker para seguridad.</p>
+      </article>
+      <article>
+        <h3>App Universitaria</h3>
+        <p>Aplicación web para gestión de cursos y estudiantes.</p>
+      </article>
+      <article>
+        <h3>Responsive Landing Page</h3>
+        <p>Diseño adaptable con Flexbox y Grid.</p>
+      </article>
+    </div>
+  </section>
+  <section class="cta">
+    <h2>¿Quieres colaborar?</h2>
+    <button onclick="document.getElementById('contacto').scrollIntoView({behavior:'smooth'})">
+      Contáctame
+    </button>
+  </section>
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+      <label for="nombre">Nombre:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="mensaje">Mensaje:</label><br>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea><br><br>
+
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2026 Portafolio Personal Desarrollo Web</p>
+  </footer>
+</body>
+</html>
