@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de reservas de cine</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <h1>Sistema de reservas de cine</h1>
+
+        <section>
+            <h2>Funciones disponibles</h2>
+            <button id="btnDisponibles">
+                Mostrar funciones disponibles
+            </button>
+
+            <div id="listaFunciones"></div>
+        </section>
+
+        <section>
+            <h2>Buscar función</h2>
+
+            <input
+                type="number"
+                id="buscarId"
+                placeholder="Ingrese ID"
+            >
+
+            <button id="btnBuscar">
+                Buscar
+            </button>
+
+            <div id="resultadoBusqueda"></div>
+        </section>
+
+        <section>
+            <h2>Comprar entradas</h2>
+
+            <input
+                type="number"
+                id="funcionId"
+                placeholder="ID de función"
+            >
+
+            <input
+                type="number"
+                id="cantidad"
+                placeholder="Cantidad"
+            >
+
+            <button id="btnComprar">
+                Comprar entradas
+            </button>
+
+            <div id="resultadoCompra"></div>
+        </section>
+
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
